@@ -4,7 +4,7 @@ REPO_COMMIT_SHORT=$(echo "$XYCE_REPO_COMMIT" | cut -c 1-7)
 
 ../configure \
 	CXXFLAGS="-O3" \
-	ARCHDIR="/$XYCE_NAME/XyceLibs/Parallel" \
+	ARCHDIR="$XYCE_DIR/XyceLibs/Parallel" \
 	CPPFLAGS="-I/usr/include/suitesparse" \
 	--enable-mpi \
 	CXX=mpicxx \

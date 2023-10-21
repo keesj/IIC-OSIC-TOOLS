@@ -1,7 +1,8 @@
 #!/bin/sh
 
-SRCDIR=/$XYCE_NAME/trilinos
-ARCHDIR=/$XYCE_NAME/XyceLibs/Parallel
+SRCDIR=$XYCE_DIR/trilinos
+# Installs onto xyce
+ARCHDIR=$XYCE_DIR/XyceLibs/Parallel
 FLAGS="-O3 -fPIC"
 PATH=$PATH:/usr/lib64/openmpi/bin
 
